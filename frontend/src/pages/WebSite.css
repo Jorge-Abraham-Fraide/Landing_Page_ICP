@@ -2,12 +2,20 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
+/* Estilos para el contenedor principal */
 .website1 {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  width: 1366px; /* Ancho de la pantalla */
+  height: 768px; /* Altura de la pantalla */
+  position: relative;
+  background-color: #ffcd6d;
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+  color: #fff;
+  font-family: Inter;
 }
 
 
@@ -277,6 +285,7 @@ html, body, #root {
   object-fit: cover;
 }
 .tu-gua-digital {
+  margin-top: 50px;
   position: absolute;
   top: 45px;
   left: 0;
@@ -296,6 +305,7 @@ html, body, #root {
   font-family: "Baloo Chettan 2";
 }
 .caractersticas {
+  margin-top: 20px;
   position: absolute;
   top: 118px;
   left: 3px;

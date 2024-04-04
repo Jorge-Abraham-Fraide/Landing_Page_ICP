@@ -1,6 +1,7 @@
 import { AuthButton, useRestActor } from "@bundly/ares-react";
 import { FunctionComponent } from "react";
 import "./WebSite.css";
+import { Baloo_Chettan_2 } from "next/font/google";
 
 const WebSite: FunctionComponent = () => {
   return (
@@ -49,7 +50,7 @@ const WebSite: FunctionComponent = () => {
       <div className="website1-child6" />
       <div className="website1-child7" />
       <div className="aplicacin-smart-honey-wrapper">
-        <b className="aplicacin-smart-honey">APLICACIÓN SMART HONEY</b>
+        <b id="acercade" className="aplicacin-smart-honey">APLICACIÓN SMART HONEY</b>
       </div>
       <div className="rectangle-group">
         <div className="group-inner" />
@@ -135,26 +136,37 @@ const WebSite: FunctionComponent = () => {
         smart honey 2024©all right reservea
       </b>
       <div className="group-parent1">
-        <div className="drone-1-parent">
+        <div id="inicio" className="drone-1-parent">
           <div className="drone-1-parent">
             <img className="drone-1-icon" alt="" src="/drone-1@2x.png" />
             <div className="group-child4" />
-            <div className="group-child5" />
           </div>
           <div className="acerca-de-parent">
-            <div className="acerca-de">Acerca de</div>
-            <div className="inicio">Inicio</div>
+            <a href="#acercade"><div className="acerca-de">Acerca de</div></a>
+            <a href="#inicio"><div className="inicio">Inicio</div></a>
             <div className="abejas-parasitadas-parent">
-              <div className="abejas-parasitadas">Abejas Parasitadas</div>
+              <a href="#parasitadas"><div className="abejas-parasitadas">Abejas Parasitadas</div></a>
             </div>
             <img className="search2-1-icon" alt="" src="/search2-1@2x.png" />
           </div>
         </div>
         <div className="iniciar-sesin">
           <AuthButton loginButtonStyle={{
-          position:"absolute",
-          color:"red",
-          backgroundColor:"red"
+          width: "239px",
+          height: "77px",
+          left: "1437px",
+          top: "51px",
+          fontFamily: "Baloo_Chettan_2",
+          fontStyle: "normal",
+          fontWeight: "600",
+          fontSize: "26px",
+          lineHeight: "38px",
+          textAlign: "center",
+          color: "#000000",
+          background: "rgba(195, 151, 23, 0.5)",
+          borderRadius: "19px",
+          borderColor: "#C39717",
+
         }}/>
         </div>
       </div>
@@ -165,7 +177,7 @@ const WebSite: FunctionComponent = () => {
         <p className="smart">{`inteligente para proteger a las abejas y preservar el delicado equilibrio `}</p>
         <p className="smart">de nuestro ecosistema</p>
       </b>
-      <div className="ellipse-parent">
+      <div id="parasitadas" className="ellipse-parent">
         <div className="frame-child" />
         <b className="abejas-parasitadas1">ABEJAS PARASITADAS</b>
         <div className="rectangle-parent2">
