@@ -1,4 +1,5 @@
 import { AuthButton, useRestActor } from "@bundly/ares-react";
+import WebSite from "./WebSite";
 
 export default function IcConnectPage() {
     const backend = useRestActor("backend");
@@ -29,12 +30,7 @@ export default function IcConnectPage() {
 
     return (
         <div>
-            <h1>IC Connect</h1>
-            <AuthButton />
-            <div>
-                <button onClick={() => whoAmI()}>Who Am I</button>
-                <button onClick={() => testFunction()}>Test</button>
-            </div>
+            <WebSite />
         </div>
     );
 }
